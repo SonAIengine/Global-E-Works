@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "./hearder"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,7 +11,6 @@ export default function Layout({ children }) {
   return (
     <html>
       <body className={inter.className}>
-        <Nav/>
         {children}
       </body>
     </html>
